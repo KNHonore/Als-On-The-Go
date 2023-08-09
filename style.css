@@ -1,0 +1,19 @@
+:root {
+  --red: #db0011;
+  --dark-red: #430a0a;
+  --blue: #92b4b5;
+  --black: #111111;
+  --white: #ffffff;
+  --gray: #8f8f8f;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: "Exo";
+}
