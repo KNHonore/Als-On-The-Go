@@ -1,10 +1,13 @@
 :root {
   --red: #db0011;
-  --dark-red: #430a0a;
-  --blue: #92b4b5;
+  --dred: #430a0a;
+  --dred-gradient: #872828;
+  --blue: #76aeb5;
+  --lblue-gradient: #c4e4e8;
   --black: #111111;
   --white: #ffffff;
-  --gray: #8f8f8f;
+  --silver: #8f8f8f;
+  --silver-gradient: #abb3b4;
 }
 
 *,
@@ -14,6 +17,6 @@
 }
 
 body {
-    margin:0;
-    font-family: "Exo";
+  margin: 0;
+  font-family: "Exo";
 }
