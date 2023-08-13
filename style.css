@@ -32,3 +32,74 @@ body {
   margin: 0;
   font-family: "Exo";
 }
+
+.wrapper {
+  margin: auto;
+}
+
+/* Landing Page */
+
+header {
+  background: url(./images/Landing\ Background.png), var(--black);
+}
+
+nav {
+  align-items: left;
+  position: absolute;
+  top: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin-bottom: 70px;
+  position: relative;
+  top: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  font-family: Khand;
+  font-size: 28px;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px #000;
+}
+
+.bg-effect {
+  rotate: -46.14;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.logo img {
+  width: 30vw;
+  position: relative;
+  top: -20px;
+  flex-shrink: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle h1.light {
+  color: #fff;
+  text-align: center;
+  font-family: Koulen;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125px; /* 130.208% */
+}
+
+
+.subtitle h1.dark {
+  color: #430a0a;
+  text-align: center;
+  font-family: Koulen;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125px; /* 130.208% */
+}
