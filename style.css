@@ -1,3 +1,4 @@
+/*  Colors */
 :root {
   --red: #db0011;
   --darkred: #430a0a;
@@ -22,6 +23,7 @@
   --lemon: #ffea28;
 }
 
+/* Full Site */
 * {
   box-sizing: border-box;
 }
@@ -33,17 +35,56 @@ body {
 
 .wrapper {
   margin: auto;
-  width:100vw;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
 }
 
-/* Landing Page */
-
-header {
-  background: url(./images/Landing\ Background.png), var(--black);
-  height: 80vh;
+/*  Fonts */
+.light {
+  color: var(--white);
 }
 
+.dark {
+  color: var(--darkred);
+}
+
+/* Headings 1 */
+h1 {
+  font-family: Koulen;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125px; /* 130.208% */
+}
+
+/* Headings 2 */
+h2 {
+  font-family: Khand;
+  font-size: 28px;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px var(--black);
+}
+
+/* Headings 3 */
+h3 {
+  font-family: Khand;
+  font-size: 20px;
+  font-style: normal;
+  text-decoration: none;
+  text-shadow: 0px 4px 4px var(--black);
+}
+
+/* Paragraphs */
+p {
+  font-family: Exo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px /* 208.333% */;
+}
+
+/* Navigation */
 nav {
   align-items: left;
   position: absolute;
@@ -55,9 +96,10 @@ nav ul li {
   margin-bottom: 70px;
   position: relative;
   top: 30px;
+  left: 30px;
 }
 
-nav ul li a {
+ul li a {
   color: var(--white);
   text-align: center;
   font-family: Khand;
@@ -67,6 +109,11 @@ nav ul li a {
   text-shadow: 0px 4px 4px #000;
 }
 
+/* Landing Page */
+header {
+  background: url(./images/Landing\ Background.png), var(--black);
+}
+
 .bg-effect {
   max-width: 100%;
   height: auto;
@@ -74,47 +121,36 @@ nav ul li a {
   position: absolute;
   right: 0px;
   top: 0px;
+  display: flex;
+  flex-shrink: 0;
 }
 
 .logo img {
   width: 30vw;
   position: relative;
   top: -20px;
+  display: flex;
   flex-shrink: 0;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .subtitle h1.light {
-  color: var(--white);
   text-align: center;
   z-index: 1;
   position: relative;
-  font-family: Koulen;
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125px; /* 130.208% */
 }
 
 .subtitle h1.dark {
-  color: var(--darkred);
   z-index: 0;
   position: absolute;
   top: 31.5%;
   left: 24.5%;
-  font-family: Koulen;
-  font-size: 96px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125px; /* 130.208% */
 }
 
 .bottom-image {
   position: absolute;
   z-index: 1;
-  width: 50%;
   bottom: 0px;
   left: 0px;
 }
@@ -123,4 +159,35 @@ nav ul li a {
   position: absolute;
   bottom: 0px;
   left: 0px;
+  display: flex;
+  flex-shrink: 0;
 }
+
+/* About Us */
+.about-us {
+  background: linear-gradient(
+    180deg,
+    var(--red-gradient) 0%,
+    var(--darkred) 100%
+  );
+}
+
+/* Catering Information */
+.catering-info {
+  background: linear-gradient(
+    180deg,
+    var(--silver) 0%,
+    var(--silver-gradient) 100%
+  );
+}
+
+/* Flavors of The Month */
+.flavors-of-the-month {
+  background: linear-gradient(
+    180deg,
+    var(--red-gradient) 0%,
+    var(--darkred) 100%
+  );
+}
+
+/*  Footer */
