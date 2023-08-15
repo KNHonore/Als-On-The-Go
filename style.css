@@ -22,9 +22,7 @@
   --lemon: #ffea28;
 }
 
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
 }
 
@@ -35,12 +33,15 @@ body {
 
 .wrapper {
   margin: auto;
+  width:100vw;
+  height: auto;
 }
 
 /* Landing Page */
 
 header {
   background: url(./images/Landing\ Background.png), var(--black);
+  height: 80vh;
 }
 
 nav {
@@ -57,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: Khand;
   font-size: 28px;
@@ -67,6 +68,8 @@ nav ul li a {
 }
 
 .bg-effect {
+  max-width: 100%;
+  height: auto;
   rotate: -46.14;
   position: absolute;
   right: 0px;
@@ -84,8 +87,10 @@ nav ul li a {
 }
 
 .subtitle h1.light {
-  color: #fff;
+  color: var(--white);
   text-align: center;
+  z-index: 1;
+  position: relative;
   font-family: Koulen;
   font-size: 96px;
   font-style: normal;
@@ -93,13 +98,29 @@ nav ul li a {
   line-height: 125px; /* 130.208% */
 }
 
-
 .subtitle h1.dark {
-  color: #430a0a;
-  text-align: center;
+  color: var(--darkred);
+  z-index: 0;
+  position: absolute;
+  top: 31.5%;
+  left: 24.5%;
   font-family: Koulen;
   font-size: 96px;
   font-style: normal;
   font-weight: 400;
   line-height: 125px; /* 130.208% */
+}
+
+.bottom-image {
+  position: absolute;
+  z-index: 1;
+  width: 50%;
+  bottom: 0px;
+  left: 0px;
+}
+
+.page-border {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
