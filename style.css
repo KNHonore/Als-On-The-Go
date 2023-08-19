@@ -144,20 +144,6 @@ a {
   z-index: 0;
 }
 
-.bottom-image img {
-  width: 100%;
-  position: relative;
-  bottom: 0;
-  z-index: 1;
-}
-
-.page-border img {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-}
-
 /* About Us */
 .about-us {
   background: linear-gradient(
