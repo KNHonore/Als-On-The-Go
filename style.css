@@ -1,4 +1,4 @@
-/*  Colors */
+/* COLORS */
 :root {
   --red: #db0011;
   --darkred: #430a0a;
@@ -23,7 +23,11 @@
   --lemon: #ffea28;
 }
 
-/* Full Site */
+/* FULL SITE */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0 auto;
@@ -40,10 +44,6 @@ body {
     var(--silver) 0%,
     var(--silver-gradient) 100%
   );
-  position: relative;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
 }
 
 #dark-page {
@@ -52,13 +52,9 @@ body {
     var(--red-gradient) 0%,
     var(--darkred) 100%
   );
-  position: relative;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
 }
 
-/*  Fonts */
+/*  FONTS */
 .light {
   color: var(--white);
 }
@@ -76,7 +72,7 @@ body {
   z-index: 0;
 }
 
-/* Heading 1 */
+/* HEADING 1 */
 h1 {
   font-family: Koulen;
   font-size: 72px;
@@ -84,7 +80,7 @@ h1 {
   font-weight: 400;
 }
 
-/* Heading 2 */
+/* HEADING 2 */
 h2 {
   font-family: Khand;
   font-size: 28px;
@@ -92,7 +88,7 @@ h2 {
   text-shadow: 0px 4px 4px var(--black);
 }
 
-/* Heading 3 */
+/* HEADING 3 */
 h3 {
   font-family: Khand;
   font-size: 20px;
@@ -100,7 +96,7 @@ h3 {
   text-shadow: 0px 4px 4px var(--black);
 }
 
-/* Paragraph */
+/* PARAGRAPH */
 p {
   font-family: Exo;
   font-size: 18px;
@@ -108,7 +104,7 @@ p {
   font-weight: 600;
 }
 
-/* Links */
+/* LINKS */
 a {
   text-decoration: none;
   color: var(--white);
@@ -118,7 +114,7 @@ a {
   text-shadow: 0px 4px 4px var(--silver);
 }
 
-/* Navigation */
+/* NAVIGATION */
 .sidenav {
   position: relative;
   top: 0;
@@ -133,7 +129,7 @@ a {
   margin-left: 15%;
 }
 
-/* Landing Page */
+/* LANDING PAGE */
 .landing-page {
   background: url(./images/Landing\ Background.png), var(--black);
   background-size: cover;
@@ -183,23 +179,32 @@ a {
   z-index: 0;
 }
 
-/* About Us */
+/* SECTIONS */
+.about-us,
+.catering-info,
+.flavors-of-the-month {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ABOUT US */
 .about-left,
 .about-right {
   border: solid;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
-.about-heading, .content {
+.about-heading,
+.content {
   display: flex;
   position: relative;
   justify-content: right;
   text-align: right;
+  margin-right: 5%;
 }
 
-.bg h1 {
+.about-us .bg h1 {
   top: 0;
   right: 0.5%;
 }
@@ -220,7 +225,7 @@ a {
   text-align: center;
 }
 
-/* Catering Information */
+/* CATERING INFORMATION */
 .info-left,
 .info-right {
   border: solid;
@@ -233,7 +238,7 @@ a {
   height: 100%;
 }
 
-/* Flavors of The Month */
+/* FLAVORS OF THE MONTH */
 .flavors-left,
 .flavors-right {
   border: solid;
@@ -246,7 +251,7 @@ a {
   height: 100%;
 }
 
-/*  Footer */
+/*  FOOTER */
 footer {
   background: url(./images/Footer\ Border.svg);
   width: 100%;
