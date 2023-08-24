@@ -46,11 +46,10 @@ body {
 }
 
 #light-page {
-  background: linear-gradient(
-    180deg,
-    var(--silver) 0%,
-    var(--silver-gradient) 100%
-  );
+  background: url(./images/Catering\ Background.png),
+    linear-gradient(180deg, var(--silver) 0%, var(--silver-gradient) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #dark-page {
@@ -59,6 +58,8 @@ body {
     var(--red-gradient) 0%,
     var(--darkred) 100%
   );
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*  FONTS */
@@ -132,6 +133,7 @@ ul {
   top: 0;
   display: flex;
   width: 15%;
+  z-index: 1;
 }
 
 .sidenav ul li {
@@ -321,7 +323,6 @@ ul {
 /* CATERING INFORMATION */
 .info-left,
 .info-right {
-  border: solid;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -334,7 +335,6 @@ ul {
 /* FLAVORS OF THE MONTH */
 .flavors-left,
 .flavors-right {
-  border: solid;
   position: relative;
   display: flex;
   flex-direction: column;
