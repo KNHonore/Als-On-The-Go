@@ -86,6 +86,7 @@ h1 {
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
+  line-height: 86.4px;
 }
 
 /* HEADING 2 */
@@ -94,6 +95,7 @@ h2 {
   font-size: 28px;
   font-style: normal;
   text-shadow: 0px 4px 4px var(--black);
+  line-height: 36.4px;
 }
 
 /* HEADING 3 */
@@ -102,6 +104,7 @@ h3 {
   font-size: 20px;
   font-style: normal;
   text-shadow: 0px 4px 4px var(--black);
+  line-height: 28px;
 }
 
 /* PARAGRAPH */
@@ -110,6 +113,7 @@ p {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
+  line-height: 27px;
 }
 
 /* LINKS */
@@ -120,6 +124,7 @@ a {
   font-size: 28px;
   font-style: normal;
   text-shadow: 0px 4px 4px var(--silver);
+  line-height: 36.4px;
 }
 
 /* LISTS */
@@ -151,6 +156,7 @@ ul {
   display: flex;
   width: 100vw;
   height: 100vh;
+  z-index: 0;
 }
 
 .bg-effect {
@@ -189,7 +195,7 @@ ul {
   width: 100%;
   position: relative;
   bottom: 27%;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* SECTIONS */
@@ -199,6 +205,7 @@ ul {
   display: flex;
   width: 100vw;
   height: 100vh;
+  z-index: 0;
 }
 
 /* ABOUT US */
@@ -245,7 +252,7 @@ ul {
   font-size: 64px;
   text-align: center;
   top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-270deg);
   margin-left: 1vw;
   cursor: pointer;
   background-color: rgba(119, 244, 255, 0.25);
@@ -263,7 +270,7 @@ ul {
 
 .gallery-contents .forward {
   right: 1vw;
-  transform: translateY(-50%) rotate(-270deg);
+  transform: translateY(-50%) rotate(-90deg);
 }
 
 .slide {
@@ -298,7 +305,7 @@ ul {
 }
 
 .about-heading .bg h1 {
-  top: 0.3vh;
+  top: 0;
   right: -0.3vw;
 }
 
@@ -318,6 +325,7 @@ ul {
 .bottom-text .bg h1 {
   top: -6.8vh;
   right: 0.5vw;
+  z-index: -1;
 }
 
 /* CATERING INFORMATION */
