@@ -45,75 +45,61 @@ body {
   max-width: 1920px;
 }
 
-#light-page {
-  background: url(./images/Catering\ Background.png),
-    linear-gradient(180deg, var(--silver) 0%, var(--silver-gradient) 100%);
+#black-page {
+  background: url(./images/Background\ 1.png), var(--black);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#dark-page {
-  background: linear-gradient(
-    180deg,
-    var(--red-gradient) 0%,
-    var(--darkred) 100%
-  );
+#red-page {
+  background: url(./images/Background\ 2.png),
+    linear-gradient(180deg, var(--red-gradient) 0%, var(--darkred) 100%);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /*  FONTS */
-.light {
-  color: var(--white);
-}
-.dark {
-  color: var(--darkred);
-}
-
-.front {
-  position: relative;
-  z-index: 1;
-}
-
-.bg h1 {
-  position: absolute;
-  z-index: 0;
-}
-
 /* HEADING 1 */
 h1 {
-  font-family: Koulen;
-  font-size: 72px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 4px 3px 0px #430a0a;
+  font-family: Walter Turncoat;
+  font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: 86.4px;
+  line-height: 76.8px; /* 120% */
+  letter-spacing: -1.28px;
 }
 
 /* HEADING 2 */
-h2 {
+h2,
+h3 {
+  color: #fff;
+  text-align: center;
   font-family: Khand;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
-  text-shadow: 0px 4px 4px var(--black);
-  line-height: 36.4px;
+  font-weight: 400;
+  line-height: 50px; /* 156.25% */
 }
 
 /* HEADING 3 */
 h3 {
-  font-family: Khand;
-  font-size: 20px;
-  font-style: normal;
-  text-shadow: 0px 4px 4px var(--black);
+  font-size: 18px;
   line-height: 28px;
 }
 
 /* PARAGRAPH */
 p {
-  font-family: Exo;
-  font-size: 18px;
+  color: #fff;
+  text-align: right;
+  font-family: Handlee;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 27px;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+  letter-spacing: 0.24px;
 }
 
 /* LINKS */
@@ -121,10 +107,20 @@ a {
   text-decoration: none;
   color: var(--white);
   font-family: Khand;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
-  text-shadow: 0px 4px 4px var(--silver);
+  text-shadow: 0px 4px 4px #000;
   line-height: 36.4px;
+}
+
+a:hover,
+a:focus {
+  color: var(--darkred);
+  text-shadow: 2px 0px 3px #fff;
+}
+
+a:focus {
+  border: 1% solid var(--white);
 }
 
 /* LISTS */
@@ -132,12 +128,23 @@ ul {
   list-style: none;
 }
 
+/* SECTIONS */
+.landing-page,
+.about-us,
+.catering-info,
+.flavors-of-the-month {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
 /* NAVIGATION */
 .sidenav {
   position: relative;
   top: 0;
   display: flex;
-  width: 15%;
   z-index: 1;
 }
 
@@ -148,17 +155,6 @@ ul {
 }
 
 /* LANDING PAGE */
-.landing-page {
-  background: url(./images/Landing\ Background.png), var(--black);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-}
-
 .bg-effect {
   position: absolute;
   right: 0;
@@ -186,30 +182,14 @@ ul {
   text-align: center;
 }
 
-.bg h1 {
-  top: 0;
-  left: 2.3%;
-}
-
 .als-truck img {
   width: 100%;
   position: relative;
-  bottom: 27%;
+  bottom: 20%;
   z-index: -1;
 }
 
-/* SECTIONS */
-.about-us,
-.catering-info,
-.flavors-of-the-month {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
-}
-
 /* ABOUT US */
-
 /* LEFT SIDE */
 .about-left,
 .about-right {
@@ -265,7 +245,7 @@ ul {
 }
 
 .gallery-contents .button:focus {
-  border: 1% solid black;
+  border: 1% solid var(--black);
 }
 
 .gallery-contents .forward {
@@ -304,11 +284,6 @@ ul {
   height: 25vh;
 }
 
-.about-heading .bg h1 {
-  top: 0;
-  right: -0.3vw;
-}
-
 .about-heading img {
   position: absolute;
   bottom: 20%;
@@ -320,12 +295,6 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.bottom-text .bg h1 {
-  top: -6.8vh;
-  right: 0.5vw;
-  z-index: -1;
 }
 
 /* CATERING INFORMATION */
