@@ -3,8 +3,6 @@
   --red: #db0011;
   --darkred: #430a0a;
   --red-gradient: #872828;
-  --blue: #76aeb5;
-  --blue-gradient: #597477;
   --black: #111111;
   --white: #ffffff;
   --silver: #8f8f8f;
@@ -62,9 +60,9 @@ body {
 /* HEADING 1 */
 h1 {
   margin: 0;
-  color: #fff;
+  color: var(--white);
   text-align: center;
-  text-shadow: 4px 3px 0px #430a0a;
+  text-shadow: 4px 3px 0px var(--darkred);
   font-family: Walter Turncoat;
   font-size: 48px;
   font-style: normal;
@@ -76,7 +74,7 @@ h1 {
 /* HEADING 2 */
 h2,
 h3 {
-  color: #fff;
+  color: var(--white);
   text-align: center;
   font-family: Cuprum;
   font-size: 24px;
@@ -93,8 +91,8 @@ h3 {
 
 /* PARAGRAPH */
 p {
-  color: #fff;
-  text-align: right;
+  color: var(--white);
+  text-align: center;
   font-family: Cuprum;
   font-size: 16px;
   font-style: normal;
@@ -120,7 +118,7 @@ a {
 a:hover,
 a:focus {
   color: var(--darkred);
-  text-shadow: 2px 0px 3px #fff;
+  text-shadow: 2px 0px 3px var(--white);
 }
 
 a:focus {
@@ -142,6 +140,28 @@ ul {
   width: 100vw;
   height: 100vh;
   z-index: 0;
+}
+
+.left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* NAVIGATION */
@@ -172,40 +192,18 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 17%;
+  width: 70%;
   height: 100%;
-  gap: 2%;
 }
 
-.logo img {
-  width: 32vw;
-}
-
-.subtitles {
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
+.als-truck,
 .als-truck img {
-  width: 100%;
-  position: relative;
   z-index: -1;
+  height: 95%;
 }
 
 /* ABOUT US */
-/* LEFT SIDE */
-.about-left,
-.about-right {
-  position: relative;
-  width: 50%;
-}
-
 .about-left {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
@@ -214,6 +212,7 @@ ul {
   left: 25%;
   position: absolute;
   z-index: 2;
+  max-width: 543px;
 }
 
 .gallery-contents {
@@ -226,8 +225,7 @@ ul {
   position: relative;
   width: 90%;
   height: 70%;
-  top: 13%;
-  margin-bottom: 5%;
+  top: 25%;
   border-radius: 10%;
 }
 
@@ -288,40 +286,83 @@ ul {
   transition-delay: 0ms;
 }
 
-/* RIGHT SIDE */
-.about-right {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  text-align: center;
+.about-us .right {
   margin-top: 8%;
-  height: 100%;
   gap: 12%;
 }
 
 /* CATERING INFORMATION */
-.info-left,
-.info-right {
-  position: relative;
+.catering-info .left {
+  margin-top: 5%;
+  gap: 12%;
+}
+
+.info-pictures {
+  margin-left: 10%;
+}
+
+.email-form {
+  margin-top: 10%;
+  height: 80%;
+  width: 70%;
+
+  background: linear-gradient(
+    180deg,
+    rgba(135, 40, 40, 0.75) 0%,
+    rgba(67, 10, 10, 0.75) 100%
+  );
+  border-radius: 25%;
+}
+
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 10%;
   height: 100%;
+  gap: 2%;
+}
+
+input,
+textarea {
+  background: var(--white);
+  border: none;
+  width: 80%;
+  height: 6%;
+  padding: 2%;
+  overflow: hidden;
+  border-radius: 3%;
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+textarea {
+  height: 50%;
+}
+
+form button {
+  background: rgba(171, 179, 180, .9);
+  width: 20%;
+  height: 8%;
+  border: none;
+  outline: none;
+  border-radius: 10%;
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+form button:hover,
+form button:focus {
+  color: var(--white);
+  opacity: 1;
+  background-color: var(--black);
+  border-radius: 10%;
 }
 
 /* FLAVORS OF THE MONTH */
-.flavors-left,
-.flavors-right {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
 
 /*  FOOTER */
 footer {
