@@ -1,234 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al's On The Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cuprum&family=Khand&family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Al's On The Go</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Khand&family=Walter+Turncoat&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <script src="main.js" defer></script>
-  <!-- Landing Page -->
-  <div class="wrapper" id="black-page">
-    <section class="landing-page">
-      <!-- Nagivation Menu -->
-      <div class="sidenav">
-        <ul>
-          <li><a href="#about-us">About Us</a></li>
-          <li>
-            <a href="#catering-info">Catering Information</a>
-          </li>
-          <li>
-            <a href="#flavors-of-the-month">Flavors of The Month</a>
-          </li>
-          <li>
-            <a href="#footer">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-      <!-- End of Navigation Menu -->
-      <div class="bg-effect">
-        <img src="./backgrounds/background-effect.png" alt="" />
-      </div>
-      <div class="center">
-        <div class="logo">
-          <img src="./logos/main-logo.png" alt="" />
-        </div>
-        <div class="subtitles">
-          <h1>Fresh, Fast, Friendly, Food!</h1>
-        </div>
-        <div class="als-truck">
-          <img src="./images/als-truck.png" alt="" />
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- End of Landing Page -->
-
-  <!-- About Us -->
-  <div class="wrapper" id="red-page">
-    <section class="about-us" id="about-us">
-      <div class="left">
-        <div class="gallery-logo">
-          <img src="./logos/main-logo.png" alt="" />
-        </div>
-        <div class="gallery-contents" data-gallery>
-          <button class="gallery-button back" data-gallery-button="prev">
-            <img src="/components/gallery-button.png" alt="" />
-          </button>
-          <button class="gallery-button forward" data-gallery-button="next">
-            <img src="/components/gallery-button.png" alt="" />
-          </button>
-          <ul data-slides>
-            <li class="slide" data-active>
-              <img src="./images/gallery images/pic 2.jpg" alt="" />
+  <body>
+    <script src="main.js" defer></script>
+    <!-- Landing Page -->
+    <div class="wrapper" id="black-page">
+      <section class="landing-page">
+        <!-- Nagivation Menu -->
+        <div class="sidenav">
+          <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li>
+              <a href="#catering-info">Catering Information</a>
             </li>
-            <li class="slide">
-              <img src="./images/gallery images/pic 1.jpg" alt="" />
+            <li>
+              <a href="#flavors-of-the-month">Flavors of The Month</a>
             </li>
-            <li class="slide">
-              <img src="./images/gallery images/pic 5.jpg" alt="" />
-            </li>
-            <li class="slide">
-              <img src="./images/gallery images/pic 6.jpg" alt="" />
+            <li>
+              <a href="#footer">Contact Us</a>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="right">
-        <div class="top-text">
-          <h1>About Us</h1>
-          <img src="./components/header-line.png" alt="" />
-          <div class="about-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <!-- End of Navigation Menu -->
+        <div class="bg-effect">
+          <img src="./backgrounds/background-effect.png" alt="" />
+        </div>
+        <div class="center">
+          <div class="logo">
+            <img src="./logos/main-logo.png" alt="" />
+          </div>
+          <div class="subtitles">
+            <h1>Fresh, Fast, Friendly, Food!</h1>
+          </div>
+          <div class="als-truck">
+            <img src="./images/als-truck.png" alt="" />
           </div>
         </div>
-        <div class="bottom-text">
-          <div class="bottom-heading">
-            <h1>Find Us On The Go!</h1>
-          </div>
-          <div class="bottom-contact">
-            <h2>
-              Dansbury Park, 15 Day St East Stroudsburg, PA, 18301 <br />
-              (570) 241-9442
-            </h2>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- End of About Us -->
-
-  <!-- Catering Information -->
-  <div class="wrapper" id="black-page">
-    <section class="catering-info" id="catering-info">
-      <div class="left">
-        <div class="top-text">
-          <h1>Catering Information</h1>
-          <img src="./components/header-line.png" alt="" />
-          <div class="info-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="info-pictures">
-          <img src="./images/picture-frames.png" alt="" />
-        </div>
-      </div>
-      <div class="right">
-        <div class="email-form">
-          <form>
-            <h2>Contact Us Today!</h2>
-            <input type="text" placeholder="Name" id="name" /><br />
-            <input type="email" placeholder="Email Address" id="email" /><br />
-            <input type="text" placeholder="Phone Number" id="phone" /><br />
-            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
-            <br /><button class="submit-btn">Send</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- End of Catering Information -->
-
-  <!-- Flavors of The Month -->
-  <div class="wrapper" id="red-page">
-    <section class="flavors-of-the-month" id="flavors-of-the-month">
-      <div class="left">
-        <img src="./images/picture-collage.png" alt="" />
-      </div>
-      <div class="right">
-        <div class="top-text">
-          <h1>Flavors of The Month</h1>
-          <img src="./components/header-line.png" alt="" />
-          <div class="flavors-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="bottom-text">
-          <div class="left-image">
-            <img src="./images/philly-water-ice.png" alt="" />
-          </div>
-          <div class="flavors">
-            <p>Current Flavors:</p>
-            <p class="multicolor">
-              Coconut <br />Cherry <br />Rainbow <br />Mango/Cherry
-              <br />Pineapple/Lemon <br />
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- End of Flavors of The Month -->
-
-  <!-- Footer -->
-  <footer>
-    <div class="wrapper" id="footer">
-      <div class="left-links">
-        <ul>
-          <li>
-            <a href="#about-us">About Us</a>
-          </li>
-          <li>
-            <a href="#catering-info">Catering <br />
-              Information <br /></a>
-          </li>
-          <li>
-            <a href="#flavors-of-the-month">Flavors of The <br />Month<br /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="center-links">
-        <h1>Find Us On The Go!</h1>
-        <div class="socials">
-          <a href="#"><img src="./logos/gmail-logo.png" alt="" /></a>
-          <a href="https://www.facebook.com/people/Als-On-The-Go/100063490091404/"><img src="./logos/facebook-logo.png" alt="" /></a>
-        </div>
-      </div>
-      <div class="right-links">
-        <h3>Dansbury Park, 15 Day St East Stroudsburg, PA, 18301</h3>
-        <a href="#">
-          <h3>Alsonthegoo@gmail.com</h3>
-        </a>
-        <h3>(570) 241-9442</h3>
-      </div>
-      <p>Website Developed by KhonoComp © 2023</p>
+      </section>
     </div>
-  </footer>
-  <!-- End of Footer -->
-</body>
+    <!-- End of Landing Page -->
 
+    <!-- About Us -->
+    <div class="wrapper" id="red-page">
+      <section class="about-us" id="about-us">
+        <div class="left">
+          <div class="gallery-logo">
+            <img src="./logos/main-logo.png" alt="" />
+          </div>
+          <div class="gallery-contents" data-gallery>
+            <button class="gallery-button back" data-gallery-button="prev">
+              <img src="/components/gallery-button.png" alt="" />
+            </button>
+            <button class="gallery-button forward" data-gallery-button="next">
+              <img src="/components/gallery-button.png" alt="" />
+            </button>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="./images/gallery images/pic 2.jpg" alt="" />
+              </li>
+              <li class="slide">
+                <img src="./images/gallery images/pic 1.jpg" alt="" />
+              </li>
+              <li class="slide">
+                <img src="./images/gallery images/pic 5.jpg" alt="" />
+              </li>
+              <li class="slide">
+                <img src="./images/gallery images/pic 6.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top-text">
+            <h1>About Us</h1>
+            <img src="./components/header-line.png" alt="" />
+            <div class="about-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+          <div class="bottom-text">
+            <div class="bottom-heading">
+              <h1>Find Us On The Go!</h1>
+            </div>
+            <div class="bottom-contact">
+              <h2>
+                Dansbury Park, 15 Day St East Stroudsburg, PA, 18301 <br />
+                (570) 241-9442
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End of About Us -->
+
+    <!-- Catering Information -->
+    <div class="wrapper" id="black-page">
+      <section class="catering-info" id="catering-info">
+        <div class="left">
+          <div class="top-text">
+            <h1>Catering Information</h1>
+            <img src="./components/header-line.png" alt="" />
+            <div class="info-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+          <div class="info-pictures">
+            <img src="./images/picture-frames.png" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="email-form">
+            <form action="contact.php" method="POST">
+              <h2>Contact Us Today!</h2>
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                id="name"
+              /><br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                id="email"
+              /><br />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                id="phone"
+              /><br />
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="How can we help you?"
+              ></textarea>
+              <br /><button class="submit-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End of Catering Information -->
+
+    <!-- Flavors of The Month -->
+    <div class="wrapper" id="red-page">
+      <section class="flavors-of-the-month" id="flavors-of-the-month">
+        <div class="left">
+          <img src="./images/picture-collage.png" alt="" />
+        </div>
+        <div class="right">
+          <div class="top-text">
+            <h1>Flavors of The Month</h1>
+            <img src="./components/header-line.png" alt="" />
+            <div class="flavors-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+          <div class="bottom-text">
+            <div class="left-image">
+              <img src="./images/philly-water-ice.png" alt="" />
+            </div>
+            <div class="flavors">
+              <p>Current Flavors:</p>
+              <p class="multicolor">
+                Coconut <br />Cherry <br />Rainbow <br />Mango/Cherry
+                <br />Pineapple/Lemon <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End of Flavors of The Month -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="wrapper" id="footer">
+        <div class="left-links">
+          <ul>
+            <li>
+              <a href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a href="#catering-info"
+                >Catering <br />
+                Information <br
+              /></a>
+            </li>
+            <li>
+              <a href="#flavors-of-the-month"
+                >Flavors of The <br />Month<br
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="center-links">
+          <h1>Find Us On The Go!</h1>
+          <div class="socials">
+            <a href="#"><img src="./logos/gmail-logo.png" alt="" /></a>
+            <a
+              href="https://www.facebook.com/people/Als-On-The-Go/100063490091404/"
+              ><img src="./logos/facebook-logo.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="right-links">
+          <h3>Dansbury Park, 15 Day St East Stroudsburg, PA, 18301</h3>
+          <a href="#">
+            <h3>Alsonthegoo@gmail.com</h3>
+          </a>
+          <h3>(570) 241-9442</h3>
+        </div>
+        <p>Website Developed by KhonoComp © 2023</p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </body>
 </html>
