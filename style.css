@@ -78,7 +78,7 @@ h2,
 h3 {
   color: #fff;
   text-align: center;
-  font-family: Khand;
+  font-family: Cuprum;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -95,12 +95,12 @@ h3 {
 p {
   color: #fff;
   text-align: right;
-  font-family: Handlee;
+  font-family: Cuprum;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0.5px;
+  word-spacing: 1px;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
@@ -202,78 +202,90 @@ ul {
 }
 
 .about-left {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.gallery-logo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.gallery-logo img {
+  top: 0;
+  left: 25%;
+  position: absolute;
   z-index: 2;
 }
 
 .gallery-contents {
-  background: rgba(89, 116, 119, 0.57) 14.06%;
+  background: linear-gradient(
+    180deg,
+    rgba(143, 143, 143, 0.5) 0%,
+    rgba(171, 179, 180, 0.5) 100%
+  );
+  display: flex;
   position: relative;
-  width: 100%;
-  height: 100%;
-  margin-left: 5%;
+  width: 90%;
+  height: 70%;
+  top: 13%;
   margin-bottom: 5%;
   border-radius: 10%;
 }
 
-.gallery-contents .button {
+.gallery-button {
   position: absolute;
-  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
-  border-radius: 0.25rem;
-  padding: 0 0.5rem;
-  color: var(--black);
-  font-size: 64px;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%) rotate(-270deg);
-  margin-left: 1vw;
+  opacity: 0.65;
+  z-index: 2;
   cursor: pointer;
-  background-color: rgba(119, 244, 255, 0.25);
+  width: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.gallery-contents .button:hover,
-.gallery-contents .button:focus {
+.gallery-button img {
+  max-width: 100%;
+}
+
+.gallery-button.forward {
+  right: 0;
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.gallery-button:hover,
+.gallery-button:focus {
   color: var(--white);
-  background-color: var(--black);
-}
-
-.gallery-contents .button:focus {
-  border: 1% solid var(--black);
-}
-
-.gallery-contents .forward {
-  right: 1vw;
-  transform: translateY(-50%) rotate(-90deg);
+  opacity: 0.9;
+  width: 53px;
+  background-color: var(--white);
+  border-radius: 10%;
 }
 
 .slide {
+  padding: 20px;
   position: absolute;
   inset: 0;
   opacity: 0;
+  border-radius: 10%;
+  transition: 300ms opacity ease-in-out;
+  transition-delay: 300ms;
 }
 
-.slide[data-active] {
-  opacity: 1;
-}
-
-.slide img {
+.slide > img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 10%;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
 }
 
 /* RIGHT SIDE */

@@ -8,15 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Handlee&family=Khand&family=Walter+Turncoat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cuprum&family=Khand&family=Walter+Turncoat&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
     <!-- Landing Page -->
     <div class="wrapper" id="black-page">
       <section class="landing-page">
@@ -61,10 +63,14 @@
           <div class="gallery-logo">
             <img src="./images/Main Logo.svg" alt="" />
           </div>
-          <div class="gallery-contents">
-            <button class="button back">&#8681;</button>
-            <button class="button forward">&#8681;</button>
-            <ul>
+          <div class="gallery-contents" data-gallery>
+            <button class="gallery-button back" data-gallery-button="prev">
+              <img src="/images/gallery-button.png" alt="" />
+            </button>
+            <button class="gallery-button forward" data-gallery-button="next">
+              <img src="/images/gallery-button.png" alt="" />
+            </button>
+            <ul data-slides>
               <li class="slide" data-active>
                 <img src="./images/gallery images/pic 2.jpg" alt="" />
               </li>
