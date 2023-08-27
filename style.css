@@ -44,13 +44,13 @@ body {
 }
 
 #black-page {
-  background: url(./images/backgrounds/background-1.png), var(--black);
+  background: url(./backgrounds/background-1.png), var(--black);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #red-page {
-  background: url(./images/backgrounds/background-2.png),
+  background: url(./backgrounds/background-2.png),
     linear-gradient(180deg, var(--red-gradient) 0%, var(--darkred) 100%);
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,12 +304,11 @@ ul {
 .email-form {
   margin-top: 10%;
   height: 80%;
-  width: 70%;
-
+  width: 60%;
   background: linear-gradient(
     180deg,
-    rgba(135, 40, 40, 0.75) 0%,
-    rgba(67, 10, 10, 0.75) 100%
+    rgba(135, 40, 40, 0.85) 0%,
+    rgba(67, 10, 10, 0.85) 100%
   );
   border-radius: 25%;
 }
@@ -326,14 +325,15 @@ form {
 
 input,
 textarea {
-  background: var(--white);
-  border: none;
-  width: 80%;
+  background: none;
+  border: solid var(--white);
+  width: 70%;
   height: 6%;
   padding: 2%;
   overflow: hidden;
-  border-radius: 3%;
+  border-radius: 4%;
   font-family: Cuprum;
+  color: var(--white);
   font-size: 16px;
   line-height: 24px;
 }
@@ -343,11 +343,10 @@ textarea {
 }
 
 form button {
-  background: rgba(171, 179, 180, .9);
+  background: var(--white);
   width: 20%;
   height: 8%;
   border: none;
-  outline: none;
   border-radius: 10%;
   font-family: Cuprum;
   font-size: 16px;
