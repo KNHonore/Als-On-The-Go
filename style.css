@@ -46,13 +46,13 @@ body {
 }
 
 #black-page {
-  background: url(./images/Background\ 1.png), var(--black);
+  background: url(./images/backgrounds/background-1.png), var(--black);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #red-page {
-  background: url(./images/Background\ 2.png),
+  background: url(./images/backgrounds/background-2.png),
     linear-gradient(180deg, var(--red-gradient) 0%, var(--darkred) 100%);
   background-size: cover;
   background-repeat: no-repeat;
@@ -325,6 +325,6 @@ ul {
 
 /*  FOOTER */
 footer {
-  background: url(./images/Footer\ Border.svg);
+  background: var(--black);
   width: 100%;
 }
