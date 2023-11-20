@@ -7,7 +7,7 @@
   --white: #ffffff;
   --silver: #8f8f8f;
   --silver-gradient: #abb3b4;
-  --coconut-brown: #c37703;
+  --coconut: #c37703;
   --cherry: #ff0000;
   --rainbow1: #df3333;
   --rainbow2: #fafe25;
@@ -119,9 +119,23 @@ a:focus {
   border: 1% solid var(--white);
 }
 
+.left-links a {
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.credit p {
+  font-size: 12px;
+}
+
 /* LISTS */
 ul {
   list-style: none;
+}
+
+.left-links ul li {
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 /* SECTIONS */
@@ -353,14 +367,106 @@ form button:focus {
 }
 
 /* FLAVORS OF THE MONTH */
-.flavors .left, .flavors .right {
-  border: solid;
-  margin-top: 3%;
+.flavors .left,
+.flavors .right {
+  margin-top: 4%;
   gap: 5%;
+}
+
+.current-flavors {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+}
+
+span {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31.2px;
+}
+
+span.coconut {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--white) 30%,
+    var(--coconut) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span.cherry {
+  color: var(--cherry);
+}
+
+span.rainbow {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--rainbow1) 0%,
+    var(--rainbow2) 8.58%,
+    var(--rainbow3) 34.9%,
+    var(--rainbow4) 60.08%,
+    var(--rainbow5) 87.19%,
+    var(--rainbow6) 94.38%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span.mango {
+  color: var(--mango);
+}
+
+span.pineapple {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--pineapple1) 30%,
+    var(--pineapple2) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span.lemon {
+  color: var(--lemon);
 }
 
 /*  FOOTER */
 footer {
   background: var(--black);
   width: 100%;
+}
+
+.left-links,
+.right-links,
+.center-links {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.center-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials, .socials a {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.socials img {
+  width: 30%;
+}
+
+.right-links h3, .right-links p {
+  margin: 0;
 }
