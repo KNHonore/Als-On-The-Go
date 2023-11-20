@@ -57,7 +57,6 @@ body {
 }
 
 /*  FONTS */
-/* HEADING 1 */
 h1 {
   margin: 0;
   color: var(--white);
@@ -71,7 +70,6 @@ h1 {
   letter-spacing: -1.28px;
 }
 
-/* HEADING 2 */
 h2,
 h3 {
   color: var(--white);
@@ -83,13 +81,11 @@ h3 {
   line-height: 31.2px;
 }
 
-/* HEADING 3 */
 h3 {
   font-size: 18px;
   line-height: 25.2px;
 }
 
-/* PARAGRAPH */
 p {
   color: var(--white);
   text-align: center;
@@ -101,10 +97,8 @@ p {
   word-spacing: 1px;
   margin-left: 10%;
   margin-right: 10%;
-  text-align: center;
 }
 
-/* LINKS */
 a {
   text-decoration: none;
   color: var(--white);
@@ -134,7 +128,7 @@ ul {
 .landing-page,
 .about-us,
 .catering-info,
-.flavors-of-the-month {
+.flavors {
   position: relative;
   display: flex;
   width: 100vw;
@@ -192,7 +186,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   height: 100%;
 }
 
@@ -200,13 +194,10 @@ ul {
 .als-truck img {
   z-index: -1;
   height: 95%;
+  margin-left: 10%;
 }
 
 /* ABOUT US */
-.about-left {
-  justify-content: center;
-}
-
 .gallery-logo img {
   top: 0;
   left: 25%;
@@ -362,6 +353,11 @@ form button:focus {
 }
 
 /* FLAVORS OF THE MONTH */
+.flavors .left, .flavors .right {
+  border: solid;
+  margin-top: 3%;
+  gap: 5%;
+}
 
 /*  FOOTER */
 footer {
