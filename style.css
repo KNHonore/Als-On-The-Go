@@ -467,6 +467,10 @@ footer {
   width: 30%;
 }
 
+.address {
+  margin: 3%;
+}
+
 .right-links h3, .right-links p {
   margin: 0;
 }
