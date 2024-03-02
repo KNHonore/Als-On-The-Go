@@ -43,15 +43,20 @@ body {
   max-width: 1920px;
 }
 
-#black-page {
+#main-page {
   background: url(./backgrounds/background-1.png), var(--black);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+#silver-page {
+  background: linear-gradient(180deg, var(--silver-gradient) 0%, var(--silver) 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #red-page {
-  background: url(./backgrounds/background-2.png),
-    linear-gradient(180deg, var(--red-gradient) 0%, var(--darkred) 100%);
+  background: linear-gradient(180deg, var(--red-gradient) 0%, var(--darkred) 100%);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -141,7 +146,7 @@ ul {
 /* SECTIONS */
 .landing-page,
 .about-us,
-.catering-info,
+.our-menu,
 .flavors {
   position: relative;
   display: flex;
@@ -173,42 +178,35 @@ ul {
 }
 
 /* NAVIGATION */
-.sidenav {
-  position: relative;
-  top: 0;
+.nav {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  border: solid;
   display: flex;
-  z-index: 1;
 }
 
-.sidenav ul li {
-  margin-top: 30%;
-  margin-bottom: 30%;
-  margin-left: 15%;
+.nav a {
+  border: solid;
+}
+
+.nav img {
+  
 }
 
 /* LANDING PAGE */
-.bg-effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-}
-
 .center {
+  border:solid;
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
   height: 100%;
 }
 
-.als-truck,
 .als-truck img {
-  z-index: -1;
-  height: 95%;
-  margin-left: 10%;
+  position: absolute;
+  height: 100%;
 }
 
 /* ABOUT US */
@@ -297,7 +295,7 @@ ul {
 }
 
 /* CATERING INFORMATION */
-.catering-info .left {
+.our-menu .left {
   margin-top: 5%;
   gap: 12%;
 }
