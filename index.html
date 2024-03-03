@@ -27,47 +27,26 @@
         <div class="nav">
           <a href="#about-us">About Us</a>
           <a href="#our-menu">Our Menu</a>
-          <img src="./logos/main-logo.png" alt="" />
+          <a href="index.html"><img src="./logos/main-logo.png" alt="" /></a>
           <a href="#flavors">Al's Water Ice</a>
           <a href="#footer">Contact Us</a>
         </div>
         <!-- End of Navigation Menu -->
         <img src="./images/Al's Truck w Road2.png" alt="" />
         <div class="subtitles">
-          <h1>Fresh, Fast, Friendly, Food!</h1>
+          <h1 class="subtitles1">Fresh, Fast, Friendly, Food!</h1>
+          <h1 class="subtitles2">And Always On the Go!</h1>
         </div>
       </section>
     </div>
     <!-- End of Landing Page -->
 
     <!-- About Us -->
-    <div class="wrapper" id="red-page">
+    <div class="wrapper">
       <section class="about-us" id="about-us">
         <div class="left">
-          <div class="gallery-logo">
-            <img src="./logos/main-logo.png" alt="" />
-          </div>
-          <div class="gallery-contents" data-gallery>
-            <button class="gallery-button back" data-gallery-button="prev">
-              <img src="/components/gallery-button.png" alt="" />
-            </button>
-            <button class="gallery-button forward" data-gallery-button="next">
-              <img src="/components/gallery-button.png" alt="" />
-            </button>
-            <ul data-slides>
-              <li class="slide" data-active>
-                <img src="./images/gallery images/pic 2.jpg" alt="" />
-              </li>
-              <li class="slide">
-                <img src="./images/gallery images/pic 1.jpg" alt="" />
-              </li>
-              <li class="slide">
-                <img src="./images/gallery images/pic 5.jpg" alt="" />
-              </li>
-              <li class="slide">
-                <img src="./images/gallery images/pic 6.jpg" alt="" />
-              </li>
-            </ul>
+          <div class="sideimage">
+            <img src="./images/burgerandfries.png" alt="" />
           </div>
         </div>
         <div class="right">
@@ -86,16 +65,13 @@
               </p>
             </div>
           </div>
-          <div class="bottom-text">
-            <div class="bottom-heading">
-              <h1>Find Us On The Go!</h1>
-            </div>
-            <div class="bottom-contact">
-              <h2>
-                Dansbury Park, 15 Day St East Stroudsburg, PA, 18301 <br />
-                (570) 241-9442
-              </h2>
-            </div>
+          <div class="bottom-card" id="main-page">
+            <img src="./images/Skewers.png" alt="" />
+            <h1>Find Us On The Go!</h1>
+            <h2>
+              Dansbury Park, 15 Day St East Stroudsburg, PA, 18301 <br />
+              (570) 241-9442
+            </h2>
           </div>
         </div>
       </section>
@@ -103,66 +79,39 @@
     <!-- End of About Us -->
 
     <!-- Our Menu -->
-    <div class="wrapper" id="silver-page">
+    <div class="wrapper">
       <section class="our-menu" id="our-menu">
-        <div class="left">
-          <div class="top-text">
-            <h1>Our Menu</h1>
-            <img src="./components/header-line.png" alt="" />
-            <div class="info-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </div>
-          <div class="info-pictures">
-            <img src="./images/picture-frames.png" alt="" />
-          </div>
+        <div class="center">
+          <h1>Our Menu</h1>
+          <img src="./components/header-line.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button>See Our Menu</button>
         </div>
-        <div class="right">
-          <div class="email-form">
-            <form action="contact.php" method="POST">
-              <h2>Contact Us Today!</h2>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                id="name"
-              /><br />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                id="email"
-              /><br />
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone Number"
-                id="phone"
-              /><br />
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                placeholder="How can we help you?"
-              ></textarea>
-              <br /><button class="submit-btn">Send</button>
-            </form>
-          </div>
+        <div class="catering-info" id="main-page">
+          <h1>Catering Information</h1>
+          <img src="./components/header-line.png" alt="" />
+          <p>
+            A deposit of half of the balance for the event has to made a month
+            before event and is not refundable. The balance is due the day
+            before event. If deposit is made in advance and cancellation is
+            requested one month before event refund will be honored deducting a
+            $200 cancellation fee.
+          </p>
         </div>
       </section>
     </div>
     <!-- End of Catering Information -->
 
     <!-- Al's Water Ice -->
-    <div class="wrapper" id="red-page">
+    <div class="wrapper">
       <section class="flavors" id="flavors">
         <div class="left">
           <img src="./images/picture-collage.png" alt="" />
