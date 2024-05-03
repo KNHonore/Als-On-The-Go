@@ -68,6 +68,11 @@ h1 {
   font-size: 60px;
 }
 
+.current-flavors h1 {
+  font-size: 36px;
+  text-shadow: 4px 4px 0px var(--darkred);
+}
+
 .our-menu .top-text h1 {
   color: var(--darkred);
   text-shadow: 4px 3px 0px var(--white);
@@ -93,13 +98,12 @@ p {
   color: var(--white);
   text-align: center;
   font-family: Cuprum;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
+  line-height: 24px;
   word-spacing: 1px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .our-menu .top-text p {
@@ -259,23 +263,27 @@ ul {
   right: 0;
 }
 
-/* CATERING INFORMATION */
+/* OUR MENU */
 .our-menu {
   background-color: var(--silver-gradient);
   background-repeat: no-repeat;
 }
 
 .our-menu .top-text {
-  padding: 150px;
-  margin-left: 300px;
-  margin-right: 300px;
+  padding: 100px;
+  margin-left: 375px;
+  margin-right: 375px;
 }
 
 .our-menu .top-text p {
+  margin-bottom: 0px;
+}
+
+.pbottom {
   padding-bottom: 50px;
 }
 
-a.menu-btn {
+.menu-btn {
   background-color: var(--darkred);
   color: var(--white);
   border: none;
@@ -286,12 +294,10 @@ a.menu-btn {
   box-shadow: 0px 4px 4px #000;
 }
 
-a.menu-btn:hover,
-a.menu-btn:focus {
+.menu-btn:hover {
   opacity: 1;
   background-color: var(--white);
   color: var(--darkred);
-  
 }
 
 #wrap {
@@ -336,7 +342,39 @@ a.menu-btn:focus {
   width: 75%;
 }
 
-/* Al's Water Ice */
+/* MENU MODAL */
+.menu {
+  border: none;
+  background: linear-gradient(
+    180deg,
+    var(--red-gradient) 0%,
+    var(--darkred) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+.menu::backdrop {
+  background: var(--black);
+  opacity: 80%;
+}
+
+.close-btn {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  font-family: Cuprum;
+  font-size: 30px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px #000;
+}
+
+.close-btn:hover {
+  opacity: 1;
+  background-color: var(--white);
+  color: var(--darkred);
+}
+
+/* AL'S WATER ICE */
 .flavors {
   background: linear-gradient(
     180deg,
@@ -349,14 +387,16 @@ a.menu-btn:focus {
 
 .flavors .left,
 .flavors .right {
-  margin-top: 4%;
-  gap: 5%;
+  margin-top: 125px;
 }
 
 .current-flavors {
   display: flex;
-  flex-direction: row;
-  margin-top: 4%;
+  flex-direction: column;
+}
+
+.current-flavors p {
+margin: 0;
 }
 
 span {

@@ -55,13 +55,26 @@
             <img src="./components/header-line2.png" alt="" />
             <div class="about-content">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Welcome to Al's On The Go, where community and delicious food
+                collide! Owned by the dedicated Helene Smiley, our food truck is
+                not just a place to grab a quick bite but a hub of warmth and
+                connection inspired by the legacy of Al, Helene's father.
+              </p>
+              <p>
+                Nestled within the heart of East Stroudsburg, specifically
+                within Dansbury Park, we take pride in serving up mouthwatering
+                meals alongside a generous side of camaraderie. Following in the
+                footstep of Al, Helene embodies the spirit of giving back,
+                actively participating in local initiatives, supporting youth
+                organizations, and fostering partnerships with neighboring
+                businesses.
+              </p>
+              <p>
+                For over 7 years, Al's On The Go has been a beacon of culinary
+                consistency and community engagement. Whether you're stopping by
+                for a savory snack or a hearty meal, our mission remains
+                unchanged: to deliver fast, fun, and friendly food experiences
+                that you can always rely on!
               </p>
             </div>
           </div>
@@ -85,16 +98,31 @@
           <h1>Our Menu</h1>
           <img src="./components/header-line.png" alt="" />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Discover the mouthwatering delights awaiting you on our menu at Al's
+            On The Go! Crafted with love and care by our owner, Helene Smiley,
+            our selection of appetizers and meals is sure to tantalize your
+            taste buds.
           </p>
-
-          <a class="menu-btn" href="#our-menu">See Our Menu</a>
+          <p>
+            From homemade classics to innovative creations, each dish is
+            prepared with fresh, quality ingredients and a dash of culinary
+            expertise. Our menu evolves with the seasons, ensuring that every
+            visit is a delightful adventure filled with new flavors and
+            experiences.
+          </p>
+          <p>
+            At Al's On The Go, we understand that dietary needs vary, which is
+            why we happily accommodate any alterations necessary to meet your
+            preferences and restrictions. Whether you're craving a quick bite or
+            planning to share with friends, our menu offers something for
+            everyone.
+          </p>
+          <p class="pbottom">
+            Indulge in the flavors of community and camaraderie with every bite
+            at Al's On The Go. Join us and experience the joy of good food, good
+            company, and good times!
+          </p>
+          <button class="button menu-btn">See Our Menu</button>
         </div>
         <img src="./images/Wrap.png" alt="" id="wrap" />
         <div class="bottom-card" id="main-page">
@@ -113,46 +141,44 @@
           <img src="./images/Chicken.png" alt="" id="chicken" />
         </div>
       </section>
+
       <!-- Menu Modal -->
-      <div id="menu" class="menu-modal">
+      <dialog class="menu" id="modal">
         <div class="menu-content">
-          <span
-            onclick="document.getElementById('menu').style.display='none'"
-            class="close-btn"
-            >x</span
-          >
           <div class="menu-title">
             <h1>Sides</h1>
           </div>
           <div class="menu-contents">
-            <h5>French Fries <b>$2.50</b></h5>
-            <h5>Mozzarella Sticks <b>$3.50</b></h5>
+            <h2>French Fries <b>$2.50</b></h2>
+            <h2>Mozzarella Sticks <b>$3.50</b></h2>
           </div>
           <div class="menu-title">
             <h1>Main Courses</h1>
           </div>
           <div class="menu-contents">
-            <h5>
+            <h2>
               Jerk Chicken, Pulled Pork, Beef, and Chicken over Fries, Nachos or
               Taco <b>$8.50</b>
-            </h5>
-            <h5>Pull Pork Sandwich <b>$5.50</b></h5>
-            <h5>Chicken parmesan Sandwich <b>$4.00</b></h5>
-            <h5>Tenders & Fries <b>$6.50</b></h5>
-            <h5>Chicken Mac & Cheese on a Waffle Cone <b>$5.00</b></h5>
-            <h5>Chicken Salad <b>$1.00</b></h5>
+            </h2>
+            <h2>Pull Pork Sandwich <b>$5.50</b></h2>
+            <h2>Chicken parmesan Sandwich <b>$4.00</b></h2>
+            <h2>Tenders & Fries <b>$6.50</b></h2>
+            <h2>Chicken Mac & Cheese on a Waffle Cone <b>$5.00</b></h2>
+            <h2>Chicken Salad <b>$1.00</b></h2>
           </div>
           <div class="menu-title">
             <h1>Desserts</h1>
           </div>
           <div class="menu-contents">
-            <h5>Ice cream <b>$2.00</b></h5>
-            <h5>Italian Water Ice <b>$4.00</b></h5>
+            <h2>Ice cream <b>$2.00</b></h2>
+            <h2>Italian Water Ice <b>$4.00</b></h2>
           </div>
+          <button class="button close-btn">Close Menu</button>
         </div>
-      </div>
+      </dialog>
+      <!--End of Menu Modal-->
     </div>
-    <!-- End of Catering Information -->
+    <!-- End of Our Menu -->
 
     <!-- Al's Water Ice -->
     <div class="wrapper">
@@ -166,22 +192,33 @@
             <img src="./components/header-line2.png" alt="" />
             <div class="flavors-content">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Quench your thirst and beat the heat with the refreshing taste
+                of Al's Water Ice! As spring blooms into summer and the
+                temperatures rise, there's no better way to cool down than with
+                our tantalizing array of flavors.
+              </p>
+              <p>
+                From classic favorites to exotic surprises, our water ice lineup
+                offers something for every palate. Indulge in the timeless
+                sweetness of lemon, savor the tropical tang of mango, or dive
+                into the lusciousness of strawberry. Craving something
+                adventurous? Try our rotating selection of seasonal specialties,
+                where every scoop is a delightful discovery waiting to be
+                savored.
+              </p>
+              <p class="pbottom">
+                At Al's On The Go, we understand the importance of staying cool
+                and hydrated during the scorching summer months. That's why
+                we're committed to bringing you the finest quality water ice
+                made with the freshest ingredients. And because variety is the
+                spice of life, be sure to keep an eye on our Facebook page for
+                updates on our latest flavors and offerings.
               </p>
             </div>
           </div>
           <div class="bottom-text">
-            <div class="left-image">
-              <img src="./images/philly-water-ice.png" alt="" />
-            </div>
             <div class="current-flavors">
-              <h2><u>Current Flavors:</u></h2>
+              <h1 class="subtitles">Current Flavors:</h1>
               <p>
                 <span class="coconut">Coconut</span><br />
                 <span class="cherry">Cherry</span><br />
@@ -198,7 +235,7 @@
         </div>
       </section>
     </div>
-    <!-- End of Flavors of The Month -->
+    <!-- End of Al's Water Ice -->
 
     <!-- Footer -->
     <footer>
