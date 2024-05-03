@@ -78,6 +78,14 @@ h1 {
   text-shadow: 4px 3px 0px var(--white);
 }
 
+.menu h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  line-height: 40px;
+  text-shadow: 3px 3px 0px var(--darkred);
+}
+
 h2,
 h3 {
   color: var(--white);
@@ -108,6 +116,12 @@ p {
 
 .our-menu .top-text p {
   color: var(--darkred);
+}
+
+.menu p {
+  font-size: 18px;
+  margin: 0px;
+  margin-bottom: 5px;
 }
 
 a {
@@ -287,6 +301,7 @@ ul {
   background-color: var(--darkred);
   color: var(--white);
   border: none;
+  border-radius: 25px;
   font-family: Cuprum;
   font-size: 40px;
   line-height: 40px;
@@ -314,8 +329,9 @@ ul {
   margin: -80px;
 }
 
-#tacos, #chicken {
-  position: absolute; 
+#tacos,
+#chicken {
+  position: absolute;
 }
 
 #tacos {
@@ -345,12 +361,22 @@ ul {
 /* MENU MODAL */
 .menu {
   border: none;
+  border-radius: 25px;
   background: linear-gradient(
     180deg,
     var(--red-gradient) 0%,
     var(--darkred) 100%
   );
   background-repeat: no-repeat;
+}
+
+.menu table {
+  margin-bottom: 75px;
+}
+
+th {
+border-bottom: solid;
+border-color: var(--black);;
 }
 
 .menu::backdrop {
@@ -365,6 +391,7 @@ ul {
   font-family: Cuprum;
   font-size: 30px;
   padding: 10px;
+  border-radius: 15px;
   box-shadow: 0px 4px 4px #000;
 }
 
@@ -391,12 +418,18 @@ ul {
 }
 
 .current-flavors {
+  background: url(./backgrounds/background-1.png), var(--black);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 6px #000;
 }
 
 .current-flavors p {
-margin: 0;
+  margin: 0;
 }
 
 span {
